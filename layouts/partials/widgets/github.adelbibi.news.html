@@ -1,3 +1,5 @@
+{{ printf "<!-- Our website is named: %s -->" .Site.Title | safeHTML }}
+
 {{ $st := .page }}
 {{ $columns := $st.Params.design.columns | default "2" }}
 
